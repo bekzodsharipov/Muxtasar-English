@@ -36,7 +36,6 @@
                 <p class="mobile-event-date">3-4 noyabr</p>
             </div>
             <div class="mobile-event-info">
-
                 <svg width="31" height="31" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M26.5 15.4583V26.5H37.5417M26.5 46.375C15.5233 46.375 6.625 37.4767 6.625 26.5C6.625 15.5233 15.5233 6.625 26.5 6.625C37.4767 6.625 46.375 15.5233 46.375 26.5C46.375 37.4767 37.4767 46.375 26.5 46.375Z"
@@ -61,7 +60,21 @@
                     <img src="./img/btn.avif" width="280" height="56" alt="ntn" loading="lazy" decoding="async">
                 </a>
             </div>
-            <div class="mobile-masterclass-info">
+       
+            <div class="lazyLoad">
+            </div>
+    </div>
+    </section>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lazyLoad = document.querySelector(".lazyLoad");
+            setTimeout(() => {
+                lazyLoad.innerHTML = `
+
+                     <div class="mobile-masterclass-info">
                 <h2 class="mobile-masterclass-title">2 kunlik BEPUL darsda:</h2>
                 <ul class="mobile-benefits-list">
                     <li class="mobile-benefit-item">
@@ -100,18 +113,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="lazyLoad">
-            </div>
-    </div>
-    </section>
-
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const lazyLoad = document.querySelector(".lazyLoad");
-            setTimeout(() => {
-                lazyLoad.innerHTML = `
       <a href="https://t.me/+fI4Gp0T9d8s0ODE6" class="mobile-cta-button registerBtn">
                 <img src="./img/btn.avif" width="280" height="56" alt="ntn" loading="lazy" decoding="async">
             </a>
